@@ -7,7 +7,7 @@ import { themes } from 'prism-react-renderer';
 import { CodeBlock as ReactCodeBlock } from 'react-code-block/dist/code-block';
 import { useCopyToClipboard } from 'react-use';
 
-export default function CodeBlock({ code, language }) {
+export default function CodeBlock({ code, language, width = 900 }) {
   const [state, copyToClipboard] = useCopyToClipboard();
 
   const copyCode = () => {
@@ -42,8 +42,8 @@ export default function CodeBlock({ code, language }) {
 
   return (
     <ReactCodeBlock code={code} language={language} theme={themes.github}>
-      <Box width={900} sx={{ position: "relative" }}>
-        <Box width={900} p={2} sx={{ border: "solid 4px #D9DCDF", borderRadius: "10px", bgcolor: "#F1F4F7", overflow: "scroll", overflowY: "visible" }}>
+      <Box width={width} sx={{ position: "relative" }}>
+        <Box width={width} p={2} sx={{ border: "solid 4px #D9DCDF", borderRadius: "10px", bgcolor: "#F1F4F7", overflow: "scroll", overflowY: "visible" }}>
           <StyledIconButton
             onClick={copyCode}
             variant="outlined"

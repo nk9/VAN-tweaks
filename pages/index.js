@@ -61,7 +61,7 @@ votebuilder.com###ContactDetailScriptProgressBars.panel.panel-default:style( pad
       <Box mt={6}>
         4. Paste this code in the big text box:
         <Box mt={1}>
-          <CodeBlock code={code} language="CSS" />
+          <CodeBlock code={code} language="CSS" width="55rem" />
         </Box>
       </Box>
     </Container>
