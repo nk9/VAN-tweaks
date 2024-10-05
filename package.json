@@ -17,13 +17,13 @@
     "@mui/icons-material": "latest",
     "@mui/material": "latest",
     "@mui/material-nextjs": "latest",
-    "codemirror": "^5.65.18",
-    "highlight.js": "^11.10.0",
     "next": "latest",
+    "prism-react-renderer": "^2.4.0",
     "prop-types": "latest",
     "react": "latest",
-    "react-codemirror2": "^8.0.0",
-    "react-dom": "latest"
+    "react-code-block": "^1.0.0",
+    "react-dom": "latest",
+    "react-use": "^17.5.1"
   },
   "devDependencies": {
     "eslint": "latest",

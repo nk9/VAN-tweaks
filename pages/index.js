@@ -2,9 +2,11 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
+import CodeBlock from '../src/CodeBlock';
 
 export default function Index() {
-  var code = `
+  var code = `# VAN Tweaks, version 2
+
 # Shrink menu bar
 votebuilder.com##.app-branding:style( display: none; )
 votebuilder.com##.app-content:style( padding-top: 40px;)
@@ -33,7 +35,7 @@ votebuilder.com###ContactDetailScriptProgressBars.panel.panel-default:style( pad
 
   return (
     <Container maxWidth="lg">
-      <Typography variant='h1'>VAN Tweaks</Typography>
+      <Typography variant='h2'>VAN Tweaks</Typography>
       <Box>
         <Box>
           1. Press the Extensions button in the toolbar, and then press <b>uBlock Origin</b>:
@@ -58,9 +60,8 @@ votebuilder.com###ContactDetailScriptProgressBars.panel.panel-default:style( pad
 
       <Box mt={6}>
         4. Paste this code in the big text box:
-        <Box>
-          <pre>{code}
-          </pre>
+        <Box mt={1}>
+          <CodeBlock code={code} language="CSS" />
         </Box>
       </Box>
     </Container>
