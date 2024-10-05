@@ -17,7 +17,7 @@ votebuilder.com##.app-nav-container>.sidebar-toggle-container:style( top: 0px !i
 votebuilder.com###last-tried-number:style(color: white;)
 votebuilder.com###last-tried-number:hover:style(color: gray;)
 
-# Narrow contact's name so the number doesn't wrap to be under the name
+# Narrow contact name so the number does not wrap to be under the name
 votebuilder.com##h1:has(#ctl00_ContentPlaceHolderVANPage_HeaderText):style( width: 18rem; )
 
 

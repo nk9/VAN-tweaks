@@ -11,7 +11,6 @@ export default function CodeBlock({ code, language, width = 900 }) {
   const [state, copyToClipboard] = useCopyToClipboard();
 
   const copyCode = () => {
-    // Logic to copy `code`
     copyToClipboard(code);
   };
 
