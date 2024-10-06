@@ -1,8 +1,10 @@
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid2';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
 import CodeBlock from '../src/CodeBlock';
+
 
 export default function Index() {
   var code = `# VAN Tweaks, version 2
@@ -30,33 +32,32 @@ votebuilder.com##.pageSectionPanel_Volunteers:style( display:none;)
 # Shrink panels padding
 votebuilder.com##.panel.panel-default:style( padding-top: 0px; padding-bottom: 0px; )
 votebuilder.com##.panel-details:style( width: auto; )
-votebuilder.com###ContactDetailScriptProgressBars.panel.panel-default:style( padding-top: 0px; padding-bottom: 0px; )
-`;
+votebuilder.com###ContactDetailScriptProgressBars.panel.panel-default:style( padding-top: 0px; padding-bottom: 0px; )`;
 
   return (
     <Container maxWidth="lg">
       <Typography variant='h2'>VAN Tweaks</Typography>
-      <Box>
-        <Box>
+
+      <Grid container spacing={1}>
+        <Grid size={3}>
           1. Press the Extensions button in the toolbar, and then press <b>uBlock Origin</b>:
-        </Box>
-        <img src="/extension.png" width={300} />
-      </Box>
-
-      <Box mt={6}>
-        <Box>
+        </Grid>
+        <Grid size={8}>
+          <img src="/extension.png" width={300} />
+        </Grid>
+        <Grid size={3}>
           2. When the panel opens, click the gears icon:
-        </Box>
-        <img src="/uBlock-Origin-panel.png" width={300} />
-      </Box>
-
-      <Box mt={6}>
-        <Box>
+        </Grid>
+        <Grid size={8}>
+          <img src="/uBlock-Origin-panel.png" width={300} />
+        </Grid>
+        <Grid size={3}>
           3. Then open the "My Filters" tab:
-        </Box>
-        <img src="/my-filters.png" width={600} />
-      </Box>
-      
+        </Grid>
+        <Grid size={8}>
+          <img src="/my-filters.png" width={600} />
+        </Grid>
+      </Grid>
 
       <Box mt={6}>
         4. Paste this code in the big text box:
