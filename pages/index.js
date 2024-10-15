@@ -7,7 +7,7 @@ import CodeBlock from '../src/CodeBlock';
 
 
 export default function Index() {
-  var code = `# VAN Tweaks, version 2
+  var code = `# VAN Tweaks, version 3
 
 # Shrink menu bar
 votebuilder.com##.app-branding:style( display: none; )
@@ -30,7 +30,7 @@ votebuilder.com###ctl00_ContentPlaceHolderVANPage_VANSectionHeadingWide_TableCel
 votebuilder.com##.pageSectionPanel_Volunteers:style( display:none;)
 
 # Shrink panels padding
-votebuilder.com##.panel.panel-default:style( padding-top: 0px; padding-bottom: 0px; )
+votebuilder.com##.panel.panel-default,.page-section .panel-heading-narrow:style( padding-top: 0px !important; padding-bottom: 0px !important; )
 votebuilder.com##.panel-details:style( width: auto; )
 votebuilder.com###ContactDetailScriptProgressBars.panel.panel-default:style( padding-top: 0px; padding-bottom: 0px; )
 
