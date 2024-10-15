@@ -35,9 +35,7 @@ votebuilder.com##.panel-details:style( width: auto; )
 votebuilder.com###ContactDetailScriptProgressBars.panel.panel-default:style( padding-top: 0px; padding-bottom: 0px; )
 
 # Bump Notes panel to the top
-votebuilder.com###ctl00_ContentPlaceHolderVANPage_VANSectionHeadingWide_TableCellSectionHeadingContent_VANSectionHeadingWide>div:has(.RadAjaxPanel>.pageSectionPanel_Notes) {
-order:99
-}
+votebuilder.com###ctl00_ContentPlaceHolderVANPage_VANSectionHeadingWide_TableCellSectionHeadingContent_VANSectionHeadingWide>div:has(.RadAjaxPanel>.pageSectionPanel_Notes):style(order:99)
 `;
 
   return (
